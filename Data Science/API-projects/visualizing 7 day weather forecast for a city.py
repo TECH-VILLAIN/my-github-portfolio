@@ -1,9 +1,9 @@
 import requests
 import matplotlib.pyplot as plt
-API_KEY = "8c28a04fab606d0bdb006609726337a9"
+API_KEY = ""
 LAT = input("enter latitude")
 LON = input("enter longitude")
-URL = "https://api.openweathermap.org/data/2.5/onecall?lat={LAT}&lon={LON}&exclude=current,minutely,hourly,alerts&units=metric&appid=8c28a04fab606d0bdb006609726337a9"
+URL = "https://api.openweathermap.org/data/2.5/onecall?lat={LAT}&lon={LON}&exclude=current,minutely,hourly,alerts&units=metric&appid="
 response = requests.get(URL)
 data = response.json()
 days= []
