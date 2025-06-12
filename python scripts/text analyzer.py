@@ -18,10 +18,9 @@ class TextAnalyzer:
 analyzer = TextAnalyzer(text)
 print(analyzer.FreqAll())
 analyzed = TextAnalyzer(text)
-print('formatted text:'
-analyzed.FmtText)
+print('formatted text:analyzed.FmtText')
 freqMap = analyzed.FreqAll()
 print(freqMap)
-word = "lorem"
-frequency = analyzed.freqof(word)
+word = "lorem".count("lorem")
+frequency = analyzed.word
 print(f"the word{word} appeared {frequency}times")

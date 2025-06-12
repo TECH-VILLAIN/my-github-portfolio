@@ -48,3 +48,19 @@ plt.xlabel("Angle [radians]")
 plt.ylabel("sin(x)")
 plt.grid(True)
 plt.show()
+# two dimensional numpy#
+A = [[12,3,5],[65,9,8],[24,6,0]]
+B = np.array(A)
+print(B)
+print(B.ndim)
+print(B.size)
+print(B.shape)
+C = A[1][2]
+print (C)
+D = [[13,4,5],[24,54,6],[67,89,6]]
+F  = np.array(D)
+print (F)
+E = B + F
+print(E)
+G = 2*F
+print (G)

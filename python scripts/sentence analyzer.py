@@ -1,7 +1,7 @@
 import re
-text = Python is amazing! It is versatile. Do you agree
-class SentenceAnalyzer
-    def __init__(self, text)
+text = "Python is amazing! It is versatile. Do you agree"
+class SentenceAnalyzer:
+    def __init__(self, text):
         self.original_text = text
 
         # Split into sentences
