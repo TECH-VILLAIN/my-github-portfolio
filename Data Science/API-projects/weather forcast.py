@@ -11,21 +11,3 @@ if response.status_code == 200:
 else:
     print("Failed to retrieve data:", data.get("message"))
 
-import os
-
-
-API_KEY = os.getenv("OPENWEATHER_API_KEY")
-CITY = "Lagos"
-URL = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}"
-
-response = requests.get(URL)
-data = response.json()
-
-if response.status_code == 200:
-    print(f"Weather in {CITY}:")
-    print(f"Temperature: {data['main']['temp']}°C")
-    print(f"Description: {data['weather'][0]['description']}")
-else:
-    print("Failed to retrieve data:", data.get("message"))
-
-
